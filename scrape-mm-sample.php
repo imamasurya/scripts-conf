@@ -49,7 +49,7 @@ function getDataMatahariMall($kw) {
 }
 
 
-if ((isset($_GET['cari'])) && ($_GET['q'] != null)) {
+if ((isset($_GET['q'])) && ($_GET['q'] != null)) {
   $keyword = $_GET['q'];
   $datamm = getDataMatahariMall($keyword);
   foreach ($datamm as $mm) {
@@ -58,8 +58,7 @@ if ((isset($_GET['cari'])) && ($_GET['q'] != null)) {
   }
 } else {
     echo '<form action="" method="get">
-            <input type="text" name="q">
-            <input type="submit" name="cari" value="Cari!">
+            <input type="search" name="q">
           </form>';
 }
 
