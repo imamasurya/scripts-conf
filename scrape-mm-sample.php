@@ -54,7 +54,7 @@ if ((isset($_GET['q'])) && ($_GET['q'] != null)) {
   $datamm = getDataMatahariMall($keyword);
   foreach ($datamm as $mm) {
     echo '<a href="' . $mm['productUrl'] . '">' . $mm['productName'] . '</a>, Rp '
-     . number_format($mm["productPrice"], 0, ",", ".") . ' from ' . $mm['productSrc'] . '</br>';
+     . number_format($mm['productPrice'], 0, ',', '.') . ' from ' . $mm['productSrc'] . '</br>';
   }
 } else {
     echo '<form action="" method="get">
